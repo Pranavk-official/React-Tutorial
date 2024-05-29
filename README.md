@@ -43,3 +43,19 @@ npm run dev
 
 ```
 
+## Important Notes
+
+- `src/main.jsx` is the entry point of the application
+- `react-dom` is used to render the application
+- `<script type="module" src="/src/main.jsx"></script>` is used to render the application in client side
+
+
+## ReactDOM 
+
+```js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+```
+
+- `ReactDOM` is used to render the application
+- Works using Virtual DOM
