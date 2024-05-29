@@ -59,3 +59,20 @@ import ReactDOM from 'react-dom/client';
 
 - `ReactDOM` is used to render the application
 - Works using Virtual DOM
+
+## Components
+
+- `App.js` is the root component
+- Components are used to render the application
+- Child components can be used inside the parent component
+
+## Props
+
+- `props` are used to pass data from one component to another
+- `props` needs to be validated using `prop-types` library
+- `props` are immutable
+- `props` are read-only
+- `props` are passed to the component using `props`
+
+
+

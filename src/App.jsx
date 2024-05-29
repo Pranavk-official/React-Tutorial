@@ -5,6 +5,7 @@ export default function App() {
     <div>
       <h1>Root Component</h1>
       <UserProfile
+        username="Bob"
         age={24}
         isLoggedIn={true}
         favoriteFoods={[
