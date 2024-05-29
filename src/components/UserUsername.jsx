@@ -1,9 +1,16 @@
+// import React from "react";
+import PropTypes from "prop-types";
+
 export function UserUsername(props) {
   // console.log(props.username)
   return (
-    <div>
+    <>
       <b>Username: </b>
       <span>{props.username}</span>
-    </div>
+    </>
   );
 }
+
+UserUsername.propTypes = {
+  username: PropTypes.string,
+};

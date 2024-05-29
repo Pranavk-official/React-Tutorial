@@ -66,6 +66,12 @@ import ReactDOM from 'react-dom/client';
 - Components are used to render the application
 - Child components can be used inside the parent component
 
+## Child Components
+
+- The parent component can render the child component
+- Inside the parent component, `props` are passed to the child component
+- The child component can access `props` using `this.props`
+
 ## Props
 
 - `props` are used to pass data from one component to another
@@ -75,4 +81,14 @@ import ReactDOM from 'react-dom/client';
 - `props` are passed to the component using `props`
 
 
+## Fragments
 
+```jsx
+import React from 'react';
+
+<React.Fragment> </React.Fragment>
+```
+
+or
+
+Shorhand for React.Fragment in JSX `<> </>`
