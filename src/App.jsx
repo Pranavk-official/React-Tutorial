@@ -1,31 +1,28 @@
 // import { UserDetails } from "./components/UserDetails";
 
-import { UserDetails } from "./components/UserDetails";
-
 export default function App() {
-  const mockUser = [
-    {
-      id: 1,
-      username: "anson",
-      email: "anson@react.com",
-    },
-    {
-      id: 2,
-      username: "mikela",
-      email: "mikela@react.com",
-    },
-    {
-      id: 3,
-      username: "tyson",
-      email: "tyson@react.com",
-    },
-  ];
+  // NOT_VERIFIED | VERIFIED | ACCOUNT_DISABLED
+  const USER_STATUS = "NOT_VERIFIED";
 
-  return (
-    <div>
-      {mockUser.map((user) => {
-        return <UserDetails key={user.id} user={user} />;
-      })}
-    </div>
-  );
+  if (USER_STATUS === "NOT_VERIFIED") {
+    return (
+      <div>
+        <span>You are not verified, Please verify your email!</span>
+      </div>
+    );
+  } else if (USER_STATUS === "VERIFIED") {
+    return (
+      <div>
+        <span>
+          You are verified, Congrats click here to access your dashboard!!
+        </span>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <span>Your account is disabled</span>
+      </div>
+    );
+  }
 }
