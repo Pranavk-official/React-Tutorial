@@ -1,12 +1,12 @@
 // import { UserDetails } from "./components/UserDetails";
-import { LoginForm } from "./components/LoginForm";
+import { RegisterForm } from "./components/RegisterForm";
 
 export default function App() {
-  // Event Handling - Common Ones
+  // State
 
   return (
     <div>
-      <LoginForm />
+      <RegisterForm />
     </div>
   );
 }
