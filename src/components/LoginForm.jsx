@@ -1,4 +1,31 @@
+import { useEffect } from "react";
+
 export function LoginForm() {
+  // Sets up a resize event listener on the window.
+  // The resize event listener logs the event when the window is resized.
+  useEffect(() => {
+    /**
+     * Event handler for the resize event.
+     * Logs the event and a message when the window is resized.
+     *
+     * @param {Event} e - The resize event.
+     */
+    const resizeEventHandler = (e) => {
+      console.log(e);
+      console.log("Window/ViewPort Resized");
+    };
+
+    // Adds the event listener to the window.
+    window.addEventListener("resize", resizeEventHandler);
+
+    // Removes the event listener from the window when the component is unmounted.
+    return () => {
+      console.log("Unmounting..........");
+      console.log("Removing Event Listener");
+      window.removeEventListener("resize", resizeEventHandler);
+    };
+  }, []);
+
   return (
     <form
       onSubmit={(e) => {
