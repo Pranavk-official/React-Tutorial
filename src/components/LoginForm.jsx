@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useDocumentClick } from "../utils/hooks/useDocumentClick";
 
 export function LoginForm() {
   // Sets up a resize event listener on the window.
@@ -25,6 +26,8 @@ export function LoginForm() {
       window.removeEventListener("resize", resizeEventHandler);
     };
   }, []);
+
+  useDocumentClick();
 
   return (
     <form
